@@ -1,29 +1,70 @@
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
+    padding: 5px;
+    margin:5px;
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-size: larger;
+    background-color: #e0e0eb;
+    padding: 20px, 30px;
     margin: 20px;
 }
-.a{
-    color:white;
 
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:20px;
+    background: gray;
+    color:black;
+    font-size: 20px;
 }
 
-.main-header {
-    display:block;
-    justify-content: space-around;
-    padding:5px;
-    background: lightpink;
-    color: white
+
+
+.me {
+    background-image: url("/assets/All\ Star\ Photo.jpg");
+    border-radius: 12px;
+    background-size:cover;
+    align-items: baseline;
+    justify-content: flex start;
+    padding: 0px;
+    height: 130px;
+    width: 130px;
 }
 
-.content-section {
-    margin: 50px;
-    border: 10px;
-    padding: 10px;
-    display:block;
-    float:right;
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.content-section{
+    margin-bottom: 50px;
+    padding: 50px;
+    height:150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:gray;
+    color:#e0e0eb;
+}
+
+p {
+    display: block;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    background-color: gray;
+    color: black;
 }
