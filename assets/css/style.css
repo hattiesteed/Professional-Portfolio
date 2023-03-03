@@ -1,8 +1,17 @@
 *{
-    box-sizing: content-box;
-    padding: 5px;
-    margin:5px;
+    padding: 0;
+    margin:0;
 }
+/* changed the class name, added a background image */
+.header{
+    color:dimgray;
+    min-height: 2px;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,20,50,0.7),rgba(4,9,30,0.7)), url(/assets/Beach\ House.jpg);
+    background-position:right;
+    background-size:cover;
+    position:absolute;
+}   
 
 body {
     display: flex;
@@ -10,32 +19,49 @@ body {
     line-height: 1;
     font-size: larger;
     background-color: #e0e0eb;
-    padding: 20px, 30px;
-    margin: 20px;
+    padding: 20px, 20px;
+    margin: 15px 15px;
 }
 
-.header {
-    display:flex;
-    justify-content:space-between;
+nav{
+    display: flex;
+    padding: 5% 6%;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    padding:20px;
-    background: gray;
-    color:black;
-    font-size: 20px;
 }
 
+nav img{
+    width: 155px;
+}
 
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
 
-.me {
-    background-image: url("/assets/All\ Star\ Photo.jpg");
-    border-radius: 12px;
-    background-size:cover;
-    align-items: baseline;
-    justify-content: flex start;
-    padding: 0px;
-    height: 130px;
-    width: 130px;
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px, 10px;
+    position: relative;
+}
+ .nav-links ul li a{
+    color:whitesmoke;
+    text-decoration:none;
+    font-size: 15px;
+ }
+
+.nav-links ul li::after{
+    width: 0%;
+    height: 2px;
+    background: #e0e0eb;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%
 }
 
 .content {
