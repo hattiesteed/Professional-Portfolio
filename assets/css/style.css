@@ -1,7 +1,9 @@
 *{
     padding: 0;
     margin:0;
+   
 }
+
 /* changed the class name, added a background image */
 .header{
     color:dimgray;
@@ -16,7 +18,7 @@
 body {
     display: flex;
     flex-direction: column;
-    line-height: 1;
+    line-height: 40px;
     font-size: larger;
     background-color: #e0e0eb;
     padding: 20px, 20px;
@@ -25,11 +27,11 @@ body {
 
 nav{
     display: flex;
-    padding: 5% 6%;
+    padding: 3% 6%;
     justify-content: space-between;
     align-items: center;
 }
-
+/* added styles to my links lines 35-68 */
 nav img{
     width: 155px;
 }
@@ -41,14 +43,14 @@ nav img{
 
 .nav-links ul li{
     list-style: none;
-    display: inline-block;
+    display: block;
     padding: 20px, 10px;
     position: relative;
 }
  .nav-links ul li a{
-    color:whitesmoke;
+    color:gray;
     text-decoration:none;
-    font-size: 15px;
+    font-size: 30px;
  }
 
 .nav-links ul li::after{
@@ -67,30 +69,62 @@ nav img{
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
+/* added box around each section */
 .content-section{
-    margin-bottom: 50px;
-    padding: 50px;
-    height:150px;
+    margin-bottom: 60px;
+    padding: 70px;
+    height: 300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:gray;
+    background-color:#006666;
     color:#e0e0eb;
 }
+/* Added because this section to fix the link/image to make it bigger than the other pictures*/
+.work{
+     flex: 1 0 0;
+     padding: "100";
+     text-align: center;
+      }
 
-p {
-    display: block;
-    margin-block-start: 1px;
-    margin-block-end: 1px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+      .work header {
+        padding: 200px;
+       
+        color: #006666;
+      }
+      
+      .work img {
+        width: 100%;
+        min-width: 20px;
+      }
+
 
 footer {
     display: flex;
     justify-content: center;
     padding: 1%;
-    background-color: gray;
+    background-color: #006666;
     color: black;
 }
+
+/* made website work in all sizes */
+
+@media screen and (max-width: 992px) (max-height:650px) {
+    header and main{
+      background: #006666;
+    }
+    
+  }
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) (max-height:650px) {
+    nav {
+      background-color: #006666;
+    }
+  }
+  
+  @media screen and (max-width: 768px) (max-height:650px) {
+    footer {
+      background-color: #006666;
+    }
+  }
