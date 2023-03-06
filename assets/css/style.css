@@ -9,10 +9,6 @@
     color:dimgray;
     min-height: 2px;
     width: 100%;
-    background-image:linear-gradient(rgba(4,20,50,0.7),rgba(4,9,30,0.7)), url(/assets/Beach\ House.jpg);
-    background-position:right;
-    background-size:cover;
-    position:absolute;
 }   
 
 body {
@@ -22,7 +18,11 @@ body {
     font-size: larger;
     background-color: #e0e0eb;
     padding: 20px, 20px;
-    margin: 15px 15px;
+    margin: 15px 15px;    
+    background-image:linear-gradient(rgba(4,20,50,0.7),rgba(4,9,30,0.7)), url(/assets/Beach\ House.jpg);
+    background-position:right;
+    background-size:cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav{
@@ -31,6 +31,11 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
+h1 {
+    flex: 1;
+}
+
 /* added styles to my links lines 35-68 */
 nav img{
     width: 155px;
@@ -67,38 +72,53 @@ nav img{
 }
 
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 40px;
+    display:block;
 }
 
 /* added box around each section */
 .content-section{
     margin-bottom: 60px;
     padding: 70px;
-    height: 300px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:#006666;
     color:#e0e0eb;
 }
 /* Added because this section to fix the link/image to make it bigger than the other pictures*/
 .work{
-     flex: 1 0 0;
+     flex: 1;
      padding: "100";
      text-align: center;
-      }
-
-      .work header {
-        padding: 200px;
-       
-        color: #006666;
       }
       
       .work img {
         width: 100%;
-        min-width: 20px;
+        min-width: 130px;
       }
 
+    /* Responsive project */
+.two-col{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.two-col a{
+    flex: 1;
+}
+
+.two-col img{
+    width:100%;
+    min-width: 150px;
+}
+
+/* put the phone next to the number */
+.contact-row{
+    display:flex;
+    align-items: center;
+}
+
+.contact-row img{
+    margin-right: 10px;
+}
 
 footer {
     display: flex;
@@ -108,23 +128,12 @@ footer {
     color: black;
 }
 
-/* made website work in all sizes */
-
-@media screen and (max-width: 992px) (max-height:650px) {
-    header and main{
-      background: #006666;
+/* Responsive to smaller screens */
+@media screen and (max-width:768px) {
+    main.content-section{
+        padding:30px;
     }
-    
-  }
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) (max-height:650px) {
-    nav {
-      background-color: #006666;
+    nav{
+        flex-direction: column;
     }
-  }
-  
-  @media screen and (max-width: 768px) (max-height:650px) {
-    footer {
-      background-color: #006666;
-    }
-  }
+}
