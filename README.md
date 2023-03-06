@@ -7,7 +7,7 @@
 5. Titles when hover over images
 
 ## Link to Deployed Application
-* 
+* https://hattiesteed.github.io/Professional-Portfolio/
 
 # Screenshot Preview of Project
 ![screenshot of Pro P](https://user-images.githubusercontent.com/124942272/223012327-83a9ed0d-ba42-49ca-bc83-cc1d283cbf15.png)
