@@ -4,8 +4,10 @@
 2. UI scrolls to sections with images of applications
 3. Responsive layout that adapts to viewport
 4. Includes my name, work, and contact info
+5. Titles when hover over images
 
 ## Link to Deployed Application
 * 
+
 # Screenshot Preview of Project
-![screenshot of Pro P](https://user-images.githubusercontent.com/124942272/222949725-03647c4f-57d8-4ee2-9753-3fb465484023.png)
+![screenshot of Pro P](https://user-images.githubusercontent.com/124942272/223012327-83a9ed0d-ba42-49ca-bc83-cc1d283cbf15.png)
