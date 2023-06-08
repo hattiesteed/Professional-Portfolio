@@ -85,7 +85,7 @@ nav img{
 /* Added because this section to fix the link/image to make it bigger than the other pictures*/
 .work{
      flex: 1;
-     padding: "100";
+     padding: "100px";
      text-align: center;
       }
       
@@ -98,7 +98,7 @@ nav img{
 .two-col{
     display:flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 .two-col a{
